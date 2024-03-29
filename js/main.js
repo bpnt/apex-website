@@ -8,6 +8,12 @@ $('.fa-bars').click(function(){
 $(window).on('load scroll', function(){
     $('.fa-bars').removeClass('fa-times');
     $('.navbar').removeClass('nav-toggle');
+
+    if($(window).scrollTop() > 30){
+        $('.header').css({'background':'#eacd50', 'box-shadow':'0 .2rem .5rem rgba(0,0,0, .4)'});
+    }else{
+        $('.header').css({'background':'none', 'box-shadow':'none'});
+    }
 });
 
 });
